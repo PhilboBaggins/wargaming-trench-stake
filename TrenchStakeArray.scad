@@ -12,6 +12,7 @@ module TrenchStakeArray(num = DEFAULT_NUM, spacing = DEFAULT_SPACING)
         TrenchStake();
     }
 
+    // Tooling strip - Holds the bits together while printing
     translate([-0.5, 0, 0])
     cube([1, (num + 1) * spacing, 1]);
 }
