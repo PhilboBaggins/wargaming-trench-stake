@@ -1,14 +1,17 @@
-NAME := TrenchStake
-
 ALL := \
-	${NAME}.stl \
-	${NAME}.png \
+	TrenchStake.stl \
+	TrenchStake.png \
+	TrenchStakeArray.stl \
+	TrenchStakeArray.png \
 
 .PHONY: all clean
 
 all: ${ALL}
 
-${ALL}: ${NAME}.scad
+TrenchStake.stl TrenchStake.png: TrenchStake.scad
+	openscad -o $@ $<
+
+TrenchStakeArray.stl TrenchStakeArray.png: TrenchStakeArray.scad
 	openscad -o $@ $<
 
 clean:
