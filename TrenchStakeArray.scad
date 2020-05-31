@@ -1,6 +1,6 @@
 use <TrenchStake.scad>
 
-DEFAULT_NUM = 10;
+DEFAULT_NUM = 75;
 DEFAULT_SPACING = 2;
 
 module TrenchStakeArray(num = DEFAULT_NUM, spacing = DEFAULT_SPACING)
