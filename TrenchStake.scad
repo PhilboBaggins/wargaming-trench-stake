@@ -2,15 +2,18 @@
 DEFAULT_LENGTH = 16;
 DEFAULT_WIDTH = 2;
 DEFAULT_LOOP_RADIUS = 1.5;
+DEFAULT_COLOUR = "grey";
 
 module TrenchStake(
     length = DEFAULT_LENGTH,
     width = DEFAULT_WIDTH,
-    loopRadius = DEFAULT_LOOP_RADIUS)
+    loopRadius = DEFAULT_LOOP_RADIUS,
+    colour = DEFAULT_COLOUR)
 {
     w = width * 2 / PI;
     l = loopRadius * 2 / PI;
 
+    color(colour)
     difference()
     {
         hull()
